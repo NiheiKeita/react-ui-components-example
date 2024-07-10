@@ -1,14 +1,15 @@
 
-import React from "react"
+import React, { ButtonHTMLAttributes } from "react"
 
-type Props = {
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode,
   variant: 'default' | 'pink'
 }
 
 export const Button = React.memo<Props>(function Button({
   children,
-  variant = 'default'
+  variant = 'default',
+  ...props
 }) {
   const color = (() => {
     switch (variant) {
@@ -20,8 +21,11 @@ export const Button = React.memo<Props>(function Button({
   })()
 
   return (
-    <button className={color + ' rounded-full px-4 py-2 font-bold transition-transform duration-200 hover:scale-105'}>
+    <button
+      className={color + ' rounded-full px-4 py-2 font-bold transition-transform duration-200 hover:scale-105'}
+      {...props}
+    >
       {children}
-    </button>
+    </button >
   )
 })

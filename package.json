@@ -6,7 +6,10 @@
   "exports": {
     ".": {
       "types": "./dist/index.umd.cjs",
-      "import": ["./dist/index.js","./dist/style.css"],
+      "import": [
+        "./dist/index.js",
+        "./dist/style.css"
+      ],
       "require": "./dist/index.d.ts"
     }
   },
@@ -15,7 +18,7 @@
   ],
   "name": "react-ui-components-example",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.11",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,9 +29,13 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/jest": "^0.2.3",
+    "@storybook/testing-library": "^0.2.2",
     "@types/node": "^20.14.10",
+    "date-fns": "^3.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "swiper": "^11.1.4",
     "vite-plugin-dts": "^3.9.1"
   },
   "devDependencies": {
