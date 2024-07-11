@@ -17,8 +17,11 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install dependencies
+    - name: npm install
       run: npm ci
+
+    - name: npm build
+      run: npm run build
 
     - name: Publish to npm
       env:
