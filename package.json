@@ -18,7 +18,7 @@
   ],
   "name": "react-ui-components-example",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.15",
   "type": "module",
   "scripts": {
     "dev": "vite",
