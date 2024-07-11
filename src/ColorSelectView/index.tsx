@@ -3,6 +3,7 @@ import { hslToRgb16 } from './hooks'
 
 type Props = {
   defaultColorHSL: number
+  // eslint-disable-next-line no-unused-vars
   handleColorSelect: (colorCode: string) => void,
 }
 
@@ -17,7 +18,8 @@ export const ColorSelectView = React.memo<Props>(function ColorSelectView({
     console.log(hslToRgb16(colorHTL))
 
     handleColorSelect('#' + hslToRgb16(colorHTL))
-  };
+  }
+
   return (
     <>
       <input type="range" value={color} min="0" max="360"

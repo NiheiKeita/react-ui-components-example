@@ -1,8 +1,8 @@
-import { action } from '@storybook/addon-actions';
-import { Meta, StoryObj } from '@storybook/react';
-import { within } from '@storybook/testing-library';
-import { CalenderDailyView } from '.';
-import { CalenderDay } from '../types/CalenderDay';
+import { action } from '@storybook/addon-actions'
+import { Meta, StoryObj } from '@storybook/react'
+import { within } from '@storybook/testing-library'
+import { CalenderDailyView } from '.'
+import { CalenderDay } from '../types/CalenderDay'
 
 const meta: Meta<typeof CalenderDailyView> = {
   title: 'views/Calender/CalenderDailyView',
@@ -25,4 +25,4 @@ export const Default: Story = {
     const canvas = await within(canvasElement)
     canvas.getByText("05")
   },
-};
+}

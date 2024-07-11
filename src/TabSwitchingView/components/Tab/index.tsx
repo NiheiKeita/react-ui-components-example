@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 type Props = {
   title: string,
@@ -20,5 +20,5 @@ export const Tab = React.memo<Props>(function Tab({
       {title}
     </div>
   )
-});
-Tab.displayName = "CountView";
+})
+Tab.displayName = "CountView"

@@ -19,6 +19,7 @@ export const useStep = (): StepContextType => {
     const updateStep = useCallback((step: Step): void => {
         setStep(step)
     }, [setStep])
+
     return {
         step,
         updateStep,

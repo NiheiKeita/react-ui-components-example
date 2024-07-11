@@ -1,9 +1,9 @@
 
-import { Meta, StoryObj } from '@storybook/react';
-import { TabSwitchingView } from '..';
-import { StepContext, useStep } from './StepContext';
-import { useContext } from 'react';
-import React from 'react';
+import { Meta, StoryObj } from '@storybook/react'
+import { TabSwitchingView } from '..'
+import { StepContext, useStep } from './StepContext'
+import { useContext } from 'react'
+import React from 'react'
 
 
 const meta: Meta<typeof TabSwitchingView> = {
@@ -34,6 +34,7 @@ export const Test: Story = {
           )
       }
     }
+
     return (
       <StepContext.Provider value={stepValue}>
         <Child />
@@ -48,6 +49,7 @@ const Sample1View = React.memo(function Sample1View() {
   const switchView = () => {
     stepContext.updateStep(2)
   }
+
   return (
     <>
       1画面目
@@ -61,6 +63,7 @@ const Sample2View = React.memo(function Sample1View() {
   const switchView = () => {
     stepContext.updateStep(3)
   }
+
   return (
     <>
       2画面目

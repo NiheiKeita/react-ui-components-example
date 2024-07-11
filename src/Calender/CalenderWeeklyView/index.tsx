@@ -1,8 +1,8 @@
 
-import React from 'react';
-import { CalenderDailyView } from '../CalenderDailyView';
-import { CalenderHeaderView } from '../CalenderHeaderView';
-import { CalenderWeek } from '../types/CalenderWeek';
+import React from 'react'
+import { CalenderDailyView } from '../CalenderDailyView'
+import { CalenderHeaderView } from '../CalenderHeaderView'
+import { CalenderWeek } from '../types/CalenderWeek'
 
 
 type Props = {
@@ -20,6 +20,7 @@ export const CalenderWeeklyView = React.memo<Props>(function CalenderWeeklyView(
 },) {
   const dayOfWeeks = ["日", "月", "火", "水", "木", "金", "土"]
   const emptyDateNum: number = calender.days[0].date.getDay()
+
   return (
     <div>
       <CalenderHeaderView handlePrevClick={handlePrevClick} handleNextClick={handleNextClick}>

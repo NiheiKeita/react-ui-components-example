@@ -18,7 +18,7 @@
   ],
   "name": "react-ui-components-example",
   "private": false,
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -33,6 +33,8 @@
     "@storybook/testing-library": "^0.2.2",
     "@types/node": "^20.14.10",
     "date-fns": "^3.6.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-tailwindcss": "^3.17.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "swiper": "^11.1.4",

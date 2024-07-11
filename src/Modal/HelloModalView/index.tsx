@@ -15,6 +15,7 @@ export const HelloModalView = React.memo<Props>(function HelloModalView() {
   const handleOpenClick = () => {
     setIsOpen(true)
   }
+
   return (
     <>
       <div className="w-fit cursor-pointer" onClick={handleOpenClick} data-testid="openButton">open</div>

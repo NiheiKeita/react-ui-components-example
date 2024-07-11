@@ -1,8 +1,8 @@
 
-import { Meta, StoryObj } from '@storybook/react';
-import { SliderView } from '.';
-import React from 'react';
-import { within } from '@storybook/testing-library';
+import { Meta, StoryObj } from '@storybook/react'
+import { SliderView } from '..'
+import React from 'react'
+import { within } from '@storybook/testing-library'
 
 const meta: Meta<typeof SliderView> = {
   title: 'views/SliderView',
@@ -36,17 +36,17 @@ const SampleSlider3 = React.memo(function SliderView() {
 })
 export const Default: Story = {
   args: {
-    sliders: [<SampleSlider1 />, <SampleSlider2 />, <SampleSlider3 />],
+    sliders: [<SampleSlider1 key={1} />, <SampleSlider2 key={2} />, <SampleSlider3 key={3} />],
   },
   play: async ({ canvasElement }) => {
     await within(canvasElement)
   },
-};
+}
 
 export const Space: Story = {
   // NOTE:リープは最低４枚ないとエラーになって右側の画像が書けるので注意
   args: {
-    sliders: [<SampleSlider1 />, <SampleSlider2 />, <SampleSlider3 />, <SampleSlider3 />],
+    sliders: [<SampleSlider1 key={1} />, <SampleSlider2 key={2} />, <SampleSlider3 key={3} />, <SampleSlider3 key={4} />],
     spaceBetween: 10,
     slidesPerView: 1.5,
     loop: true,
@@ -54,4 +54,4 @@ export const Space: Story = {
   play: async ({ canvasElement }) => {
     await within(canvasElement)
   },
-};
+}

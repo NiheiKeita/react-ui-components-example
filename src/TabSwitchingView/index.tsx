@@ -1,7 +1,7 @@
-import React from "react";
-import { Step, useStep } from "./contexts/StepContext";
-import { StepContext } from "./contexts/StepContext";
-import { Tab } from "./components/Tab";
+import React from "react"
+import { Step, useStep } from "./contexts/StepContext"
+import { StepContext } from "./contexts/StepContext"
+import { Tab } from "./components/Tab"
 
 export const TabSwitchingView = React.memo(function TabSwitchingView() {
   const stepValue = useStep()
@@ -31,9 +31,10 @@ export const TabSwitchingView = React.memo(function TabSwitchingView() {
   }
   const tabList: Step[] = ['Home', 'Explore', 'Notifications', 'Messages']
   const handleTabChange = (step: Step) => {
-    stepValue.updateStep(step);
-  };
+    stepValue.updateStep(step)
+  }
   const step = stepValue.step
+
   return (
     <>
       <StepContext.Provider value={stepValue}>
@@ -57,6 +58,6 @@ export const TabSwitchingView = React.memo(function TabSwitchingView() {
       </StepContext.Provider>
     </>
   )
-});
-TabSwitchingView.displayName = "CountView";
+})
+TabSwitchingView.displayName = "CountView"
 

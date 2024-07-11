@@ -1,11 +1,11 @@
-import { action } from '@storybook/addon-actions';
-import { expect } from '@storybook/jest';
-import { Meta, StoryObj } from '@storybook/react';
-import { fireEvent, waitFor, within } from '@storybook/testing-library';
-import { eachDayOfInterval } from 'date-fns';
-import { CalenderMonthlyView } from '.';
-import { CalenderDay } from '../types/CalenderDay';
-import { CalenderMonth } from '../types/CalenderMonth';
+import { action } from '@storybook/addon-actions'
+import { expect } from '@storybook/jest'
+import { Meta, StoryObj } from '@storybook/react'
+import { fireEvent, waitFor, within } from '@storybook/testing-library'
+import { eachDayOfInterval } from 'date-fns'
+import { CalenderMonthlyView } from '.'
+import { CalenderDay } from '../types/CalenderDay'
+import { CalenderMonth } from '../types/CalenderMonth'
 
 
 const meta: Meta<typeof CalenderMonthlyView> = {
@@ -37,4 +37,4 @@ export const Default: Story = {
     await fireEvent.click(canvas.getByText('05'))
     await waitFor(() => expect(args.handleDayClick).toHaveBeenCalledTimes(1))
   },
-};
+}

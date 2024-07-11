@@ -3,6 +3,7 @@ import React from "react"
 import { CalenderDay } from "../types/CalenderDay"
 
 type Props = {
+  // eslint-disable-next-line no-unused-vars
   handleClick: (day: Date) => void,
   day: CalenderDay,
 }

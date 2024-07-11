@@ -1,8 +1,8 @@
 
-import { Meta, StoryObj } from '@storybook/react';
-import { fireEvent, within } from '@storybook/testing-library';
-import { ColorSelectView } from '.';
-import { useState } from 'react';
+import { Meta, StoryObj } from '@storybook/react'
+import { fireEvent, within } from '@storybook/testing-library'
+import { ColorSelectView } from '.'
+import { useState } from 'react'
 
 const meta: Meta<typeof ColorSelectView> = {
   title: 'views/ColorSelectView',
@@ -20,6 +20,7 @@ export const Default: Story = {
     const handleColorSelect = (colorCode: string) => {
       setColor(colorCode)
     }
+
     return (
       <>
         {color}
@@ -34,4 +35,4 @@ export const Default: Story = {
     const canvas = await within(canvasElement)
     await fireEvent.click(canvas.getByTestId('color'))
   },
-};
+}

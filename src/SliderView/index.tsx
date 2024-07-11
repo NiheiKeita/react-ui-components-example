@@ -1,8 +1,8 @@
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import React from "react"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import "swiper/css/pagination"
+import { Navigation, Pagination } from "swiper/modules"
 
 type Props = {
   sliders: React.ReactNode[],
@@ -48,21 +48,18 @@ export const SliderView = React.memo<Props>(function SliderView({
       </Swiper>
 
       <div
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="swiper-button-prev absolute inset-y-1/2 left-0 z-10 ms-4 flex cursor-pointer 
         items-center justify-center text-white transition-all hover:ml-3"
       >
         ＜
       </div>
       <div
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="swiper-button-next absolute inset-y-1/2 right-0 z-10 me-4 flex cursor-pointer 
         items-center justify-center text-white transition-all hover:mr-3"
       >
         ＞
       </div>
       <div
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="swiper-pagination [&_.swiper-pagination-bullet-active]:!bg-white 
       [&_.swiper-pagination-bullet]:bg-white"
       />

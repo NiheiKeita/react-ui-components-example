@@ -1,9 +1,9 @@
-import { expect } from '@storybook/jest';
+import { expect } from '@storybook/jest'
 
-import { Meta, StoryObj } from '@storybook/react';
-import { fireEvent, within } from '@storybook/testing-library';
-import { HelloModalView } from '.';
-import { action } from '@storybook/addon-actions';
+import { Meta, StoryObj } from '@storybook/react'
+import { fireEvent, within } from '@storybook/testing-library'
+import { HelloModalView } from '.'
+import { action } from '@storybook/addon-actions'
 
 const meta: Meta<typeof HelloModalView> = {
   title: 'views/Modal/HelloModalView',

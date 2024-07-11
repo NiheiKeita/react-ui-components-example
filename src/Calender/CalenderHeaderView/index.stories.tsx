@@ -1,8 +1,8 @@
-import { action } from '@storybook/addon-actions';
-import { expect } from '@storybook/jest';
-import { Meta, StoryObj } from '@storybook/react';
-import { fireEvent, waitFor, within } from '@storybook/testing-library';
-import { CalenderHeaderView } from '.';
+import { action } from '@storybook/addon-actions'
+import { expect } from '@storybook/jest'
+import { Meta, StoryObj } from '@storybook/react'
+import { fireEvent, waitFor, within } from '@storybook/testing-library'
+import { CalenderHeaderView } from '.'
 
 const meta: Meta<typeof CalenderHeaderView> = {
   title: 'views/Calender/CalenderHeaderView',
@@ -35,4 +35,4 @@ export const Default: Story = {
       expect(canvas.getByTestId('nextButton').textContent).toBe('次の月')
     })
   },
-};
+}

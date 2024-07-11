@@ -11,7 +11,8 @@ export const ModalView = React.memo<Props>(function ModalView({
 }) {
   const handleClose = () => {
     onClose()
-  };
+  }
+
   return (
     <>
       {isOpen && (

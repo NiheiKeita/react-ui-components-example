@@ -1,9 +1,9 @@
-import { expect } from '@storybook/jest';
+import { expect } from '@storybook/jest'
 
-import { Meta, StoryObj } from '@storybook/react';
-import { fireEvent, waitFor, within } from '@storybook/testing-library';
-import { ModalView } from '.';
-import { action } from '@storybook/addon-actions';
+import { Meta, StoryObj } from '@storybook/react'
+import { fireEvent, waitFor, within } from '@storybook/testing-library'
+import { ModalView } from '.'
+import { action } from '@storybook/addon-actions'
 
 const meta: Meta<typeof ModalView> = {
   title: 'views/Modal/ModalView',
@@ -31,4 +31,4 @@ export const Default: Story = {
     await fireEvent.click(canvas.getByTestId('closeButton'))
     await waitFor(() => expect(args.onClose).toHaveBeenCalledTimes(2))
   },
-};
+}

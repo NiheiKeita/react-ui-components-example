@@ -1,7 +1,7 @@
-import { expect } from '@storybook/jest';
-import { Meta, StoryObj } from '@storybook/react';
-import { TabSwitchingView } from '.';
-import { fireEvent, within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest'
+import { Meta, StoryObj } from '@storybook/react'
+import { TabSwitchingView } from '.'
+import { fireEvent, within } from '@storybook/testing-library'
 
 
 const meta: Meta<typeof TabSwitchingView> = {
