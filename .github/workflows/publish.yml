@@ -2,6 +2,11 @@ name: publish to npm
 on:
     release:
       types: [published]
+
+permissions:
+    id-token: write
+    contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
