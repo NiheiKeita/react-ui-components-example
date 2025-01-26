@@ -16,7 +16,8 @@ export const ModalView = React.memo<Props>(function ModalView({
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+        <div className="fixed inset-0 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
+          style={{ paddingTop: "env(safe-area-inset-top)" }}>
           {/* モーダルのバックドロップ */}
           <div className="fixed inset-0 z-40 bg-black opacity-50" data-testid="background" onClick={handleClose}></div>
           <div className="relative z-50 min-h-[50%] w-auto min-w-[50%] max-w-lg rounded-xl bg-white p-6 shadow-md ">
