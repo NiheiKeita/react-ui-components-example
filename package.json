@@ -22,7 +22,7 @@
   ],
   "name": "react-ui-components-example",
   "private": false,
-  "version": "0.0.25",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
