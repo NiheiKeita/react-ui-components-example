@@ -16,10 +16,10 @@ export const TypeCList = React.memo<Props>(function TypeCList({
       {list.map((item, index) => (
         <div
           key={index}
-          className="group grid grid-cols-3 items-center gap-4 py-1"
+          className="group grid grid-cols-3 items-center gap-4"
         >
           <div
-            className="flex flex-col items-center border-b  group-last:border-b-0"
+            className="flex flex-col items-center border-b py-1 group-last:border-b-0"
             style={{ borderColor: color }}
           >
             <div
@@ -30,7 +30,7 @@ export const TypeCList = React.memo<Props>(function TypeCList({
             </div>
           </div>
           <div
-            className="col-span-2 border-b ps-2 text-black  group-last:border-b-0"
+            className="col-span-2 border-b py-1 ps-2 text-black group-last:border-b-0"
             style={{ borderColor: color }}
           >
             {item.content}

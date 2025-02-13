@@ -1,14 +1,16 @@
 
 import { Meta, StoryObj } from '@storybook/react/*'
-import { TempList } from '.'
+import { TypeDList } from '.'
 
 const meta: Meta = {
   tags: ['autodocs'],
-  component: TempList,
+  component: TypeDList,
 }
 export default meta
 
-export const Default: StoryObj<typeof TempList> = {
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
   args: {
     list: [
       {
@@ -24,16 +26,6 @@ export const Default: StoryObj<typeof TempList> = {
         content: 'Content 3',
       },
     ],
-  },
-  render: function Render(args) {
-
-    return (
-      <div className="grid gap-10">
-        <TempList {...args} type='A' />
-        <TempList {...args} type='B' />
-        <TempList {...args} type='C' />
-        <TempList {...args} type='D' />
-      </div>
-    )
+    color: '#004CA0'
   },
 }

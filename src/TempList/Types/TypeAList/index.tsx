@@ -12,7 +12,7 @@ export const TypeAList = React.memo<Props>(function TypeAList({
 }) {
 
   return (
-    <div className="">
+    <div>
       {list.map((item, index) => (
         <div
           key={index}
