@@ -26,6 +26,6 @@ export const Default: Story = {
         content: 'Content 3',
       },
     ],
-    color: 'blue-500'
+    color: '#004CA0'
   },
 }
