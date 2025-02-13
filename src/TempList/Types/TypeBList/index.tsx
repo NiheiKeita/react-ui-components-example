@@ -12,11 +12,11 @@ export const TypeBList = React.memo<Props>(function TypeBList({
 }) {
 
   return (
-    <div className="space-y-2">
+    <div>
       {list.map((item, index) => (
-        <div key={index} className="grid grid-cols-3 items-center">
+        <div key={index} className="group grid grid-cols-3 items-center py-1">
           <div
-            className="flex flex-col items-center border-b-2"
+            className="flex flex-col items-center border-b-2 group-last:border-b-0"
             style={{ borderColor: color }}
           >
             <div className="font-semibold"
@@ -25,7 +25,7 @@ export const TypeBList = React.memo<Props>(function TypeBList({
               {item.title}
             </div>
           </div>
-          <div className="col-span-2 w-full border-b-2 border-gray-300 ps-2 text-black">
+          <div className="col-span-2 w-full border-b-2 border-gray-300 ps-2 text-black group-last:border-b-0">
             {item.content}
           </div>
         </div>

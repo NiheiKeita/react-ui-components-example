@@ -12,11 +12,11 @@ export const TypeAList = React.memo<Props>(function TypeAList({
 }) {
 
   return (
-    <div className="space-y-2">
+    <div className="">
       {list.map((item, index) => (
         <div
           key={index}
-          className="grid grid-cols-3 items-center border-b"
+          className="grid grid-cols-3 items-center border-b py-1 last:border-b-0"
           style={{ borderColor: color }}
         >
           <div className="flex flex-col items-center">
