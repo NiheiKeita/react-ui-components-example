@@ -11,10 +11,11 @@ import { TypeFList } from './Types/TypeFList'
 import { TypeGList } from './Types/TypeGList'
 import { TypeHList } from './Types/TypeHList'
 import { TypeIList } from './Types/TypeIList'
+import { TypeJList } from './Types/TypeJList'
 
 type Props = {
   list: List[],
-  type?: "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I",
+  type?: "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J",
   color?: string
 }
 export const TempList = React.memo<Props>(function TempList({
@@ -50,6 +51,9 @@ export const TempList = React.memo<Props>(function TempList({
       </When>
       <When exp={type === "I"}>
         <TypeIList list={list} color={color} />
+      </When>
+      <When exp={type === "J"}>
+        <TypeJList list={list} color={color} />
       </When>
     </Match >
   )
