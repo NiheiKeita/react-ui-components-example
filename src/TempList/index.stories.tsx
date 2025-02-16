@@ -28,12 +28,15 @@ export const Default: StoryObj<typeof TempList> = {
   render: function Render(args) {
 
     return (
-      <div className="grid gap-10">
+      <div className="grid gap-10 bg-gray-100 p-4">
         <TempList {...args} type='A' />
         <TempList {...args} type='B' />
         <TempList {...args} type='C' />
         <TempList {...args} type='D' />
         <TempList {...args} type='E' />
+        <TempList {...args} type='F' />
+        <TempList {...args} type='G' />
+        <TempList {...args} type='H' />
       </div>
     )
   },
