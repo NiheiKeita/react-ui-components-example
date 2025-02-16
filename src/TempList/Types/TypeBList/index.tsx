@@ -19,7 +19,7 @@ export const TypeBList = React.memo<Props>(function TypeBList({
             className="flex flex-col items-center border-b-2 py-1 group-last:border-b-0"
             style={{ borderColor: color }}
           >
-            <div className="font-semibold"
+            <div className=""
               style={{ color: color }}
             >
               {item.title}

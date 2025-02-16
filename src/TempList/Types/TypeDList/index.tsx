@@ -21,7 +21,7 @@ export const TypeDList = React.memo<Props>(function TypeDList({
         >
           <div className="flex flex-col items-center">
             <div
-              className="rounded-full px-4 font-semibold text-white"
+              className="rounded-full px-4  text-white"
               style={{ backgroundColor: color }}
             >
               {item.title}
@@ -39,7 +39,7 @@ export const TypeDList = React.memo<Props>(function TypeDList({
     //     >
     //       <div className="flex flex-col items-center">
     //         <div
-    //           className="rounded-full px-4 font-semibold text-white"
+    //           className="rounded-full px-4  text-white"
     //           style={{ backgroundColor: color }}
     //         >
     //           {item.title}

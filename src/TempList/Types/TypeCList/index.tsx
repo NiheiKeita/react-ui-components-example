@@ -23,7 +23,7 @@ export const TypeCList = React.memo<Props>(function TypeCList({
             style={{ borderColor: color }}
           >
             <div
-              className="font-semibold"
+              className=""
               style={{ color: color }}
             >
               {item.title}

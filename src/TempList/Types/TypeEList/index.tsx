@@ -6,7 +6,7 @@ type Props = {
   list: List[]
   color: string
 }
-export const TypeAList = React.memo<Props>(function TypeAList({
+export const TypeEList = React.memo<Props>(function TypeEList({
   list,
   color
 }) {
@@ -16,10 +16,13 @@ export const TypeAList = React.memo<Props>(function TypeAList({
       {list.map((item, index) => (
         <div
           key={index}
-          className="grid grid-cols-3 items-center border-b py-1 last:border-b-0"
+          className="grid grid-cols-3 items-center border-t py-1 last:border-b"
           style={{ borderColor: color }}
         >
-          <div className="flex flex-col items-center">
+          <div
+            className="flex flex-col items-center border-r-4 "
+            style={{ borderColor: color }}
+          >
             <div
               className=""
               style={{ color: color }}
@@ -27,7 +30,7 @@ export const TypeAList = React.memo<Props>(function TypeAList({
               {item.title}
             </div>
           </div>
-          <div className="col-span-2 ps-2 text-black">{item.content}</div>
+          <div className="col-span-2 ps-6 text-black">{item.content}</div>
         </div>
       ))}
     </div >
