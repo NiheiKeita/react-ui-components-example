@@ -40,6 +40,7 @@ export const Default: StoryObj<typeof TempList> = {
         <TempList {...args} type='I' />
         <TempList {...args} type='J' />
         <TempList {...args} type='K' />
+        <TempList {...args} type='L' />
       </div>
     )
   },
